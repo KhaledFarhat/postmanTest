@@ -11,7 +11,7 @@
     "db:seed": "./node_modules/.bin/sequelize db:seed:all",
     "lint:watch": "esw -w --fix ./server/**/*.js app.js",
     "test:watch": "mocha -w -R progress ./server/**/*.spec.js",
-    "postmanTests": "newman run ./postman_exports/collections/Users.postman_collection.json -e ./postman_exports/environments/Dev.postman_environment.json",
+    "postmanTests": "newman run ./postman_exports/collections/HouseholdWishlist.postman_collection.json -e ./postman_exports/environments/Dev.postman_environment.json -d ./datafiles/households.json",
     "watch": "npm run test:watch & npm run lint:watch"
   },
   "dependencies": {
